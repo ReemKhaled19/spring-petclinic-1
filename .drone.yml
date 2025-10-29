@@ -13,5 +13,5 @@ steps:
         from_secret: docker_password
       tags:
         - latest
-        - ${DRONE_BUILD_NUMBER}  # كل build ياخد رقم version مختلف
+        - ${DRONE_BUILD_NUMBER}  
 
