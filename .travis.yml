@@ -1,0 +1,18 @@
+language: java
+jdk:
+  - openjdk21
+
+services:
+  - docker
+
+before_script:
+  - echo "🚀 Starting Travis build for Spring Petclinic..."
+
+script:
+  # Build Docker image from your Dockerfile
+  - docker build -t spring-petclinic:build-latest .
+
+after_success:
+  - echo "✅ Travis build completed successfully!"
+  # Travis هنا مش هيعمل Push، Drone هو اللي هيتولى المرحلة الجاية
+
