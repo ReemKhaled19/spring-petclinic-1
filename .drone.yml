@@ -6,11 +6,11 @@ steps:
   - name: push-image
     image: plugins/docker
     settings:
-      repo: mohamedelgarhy/spring-petclinic   # 👈 غيّر الاسم لو مختلف في Docker Hub
+      repo:    reemsolimman/spring-petclinic
       username:
-        from_secret: docker_username
+        from_secret: reemsolimman
       password:
-        from_secret: docker_password
+        from_secret: Reem010..
       tags:
         - latest
         - ${DRONE_BUILD_NUMBER}  # كل build ياخد رقم version مختلف
