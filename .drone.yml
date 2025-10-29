@@ -8,9 +8,9 @@ steps:
     settings:
       repo:    reemsolimman/spring-petclinic
       username:
-        from_secret: reemsolimman
+        from_secret: docker_username
       password:
-        from_secret: Reem010..
+        from_secret: docker_password
       tags:
         - latest
         - ${DRONE_BUILD_NUMBER}  # كل build ياخد رقم version مختلف
