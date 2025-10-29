@@ -13,4 +13,4 @@ script:
 
 after_success:
   - echo "Travis build completed successfully!"
-  - curl -X POST https://192.168.157.128:8080/hook/<YOUR_WEBHOOK_TOKEN>
+  - curl -X POST https://voluptuously-stomatous-jeanmarie.ngrok-free.dev/webhook
